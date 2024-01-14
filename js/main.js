@@ -16,3 +16,4 @@ function sendMessage(event) {
     templateContent.querySelector('.chat__message-text').textContent = `Я: ${msgText}`;
     msgList.append(templateContent);
     msgInput.value = '';
+}
