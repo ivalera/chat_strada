@@ -5,25 +5,25 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>#4 Чат: вëрстка</title>
+        <title>#5 Чат: добавление сообщений</title>
         <link href="./css/normalize.css" rel="stylesheet" type="text/css" />
         <link href="./css/styles.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
         <section class="header">
             <h2>Strada</h2>
-            <h3>Модуль 4. День 4.</h3>
+            <h3>Модуль 4. День 5.</h3>
             <div style="width: 100px"></div>
         </section>
         <section class="main">
-            <h2 class="theme__title">Чат: вёрстка</h2>
+            <h2 class="theme__title">Чат: добавление сообщений</h2>
             <div class="chat">
                 <div class="chat__btn-block">
                     <button class="chat__settings btn" onclick="window.setting.showModal()">Настройки</button>
                     <button class="chat__leave btn">Выйти</button>
                 </div>
                 <div class="chat__messages-place">
-                    <ul class="chat__block">
+                    <ul class="chat__messages-list">
                         <li class="chat__message user1">
                             <p class="chat__message-text">Я: Хочу видеть красоту в этом чате!</p>
                             <p class="chat__message-time">18:47</p>
@@ -40,42 +40,16 @@
                             <p class="chat__message-text">Собеседник: Добрый день! Напишу больше текста.</p>
                             <p class="chat__message-time">15:44</p>
                         </li>
-                        <li class="chat__message user1">
-                            <p class="chat__message-text">Я: Хочу видеть красоту в этом чате!</p>
-                            <p class="chat__message-time">18:47</p>
-                        </li>
-                        <li class="chat__message user2">
-                            <p class="chat__message-text">Собеседник: Чего надо?</p>
-                            <p class="chat__message-time">18:46</p>
-                        </li>
-                        <li class="chat__message user1">
-                            <p class="chat__message-text">Я: Добрый день!</p>
-                            <p class="chat__message-time">18:45</p>
-                        </li>
-                        <li class="chat__message user2">
-                            <p class="chat__message-text">Собеседник: Добрый день! Напишу больше текста.</p>
-                            <p class="chat__message-time">15:44</p>
-                        </li>
-                        <li class="chat__message user1">
-                            <p class="chat__message-text">Я: Хочу видеть красоту в этом чате!</p>
-                            <p class="chat__message-time">18:47</p>
-                        </li>
-                        <li class="chat__message user2">
-                            <p class="chat__message-text">Собеседник: Чего надо?</p>
-                            <p class="chat__message-time">18:46</p>
-                        </li>
-                        <li class="chat__message user1">
-                            <p class="chat__message-text">Я: Добрый день!</p>
-                            <p class="chat__message-time">18:45</p>
-                        </li>
-                        <li class="chat__message user2">
-                            <p class="chat__message-text">Собеседник: Добрый день! Напишу больше текста.</p>
-                            <p class="chat__message-time">15:44</p>
-                        </li>
+                        <template id="message">
+                            <li class="chat__message user1">
+                                <p class="chat__message-text">Я: Хочу видеть красоту в этом чате!</p>
+                                <p class="chat__message-time">18:47</p>
+                            </li>
+                        </template>
                     </ul>
                 </div>
                 <form class="chat__form-send">
-                    <input class="chat__send-message" type="text" placeholder="сообщение..">
+                    <input class="chat__send-text" type="text" placeholder="сообщение..">
                     <button class="chat__send-btn btn">-></button>
                 </form>
             </div>
